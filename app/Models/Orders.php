@@ -13,8 +13,7 @@ class Orders extends Model
         'product_name',
         'quantity',
         'price',
-        'total_price',
-        'total_id'
+        'total_price'
     ];
     public function products() {
         return $this->hasMany('App\Models\Products');

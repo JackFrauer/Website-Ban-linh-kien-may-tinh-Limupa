@@ -62,16 +62,7 @@
                                             <span>{{$product->product_details}}</span>
                                         </p>
                                     </div>
-                                    <div class="product-variants">
-                                        <div class="produt-variants-size">
-                                            <label>Dimension</label>
-                                            <select class="nice-select">
-                                                <option value="1" title="S" selected="selected">40x60cm</option>
-                                                <option value="2" title="M">60x90cm</option>
-                                                <option value="3" title="L">80x120cm</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                        
                                     <div class="single-add-to-cart">
                                         <form action="#" class="cart-quantity">
                                             <div class="quantity">
@@ -103,7 +94,7 @@
                                                     <div class="reassurance-icon">
                                                         <i class="fa fa-check-square-o"></i>
                                                     </div>
-                                                    <p>Security policy (edit with Customer reassurance module)</p>
+                                                    <p>Security policy </p>
                                                 </div>
                                             </li>
                                             <li>
@@ -111,7 +102,7 @@
                                                     <div class="reassurance-icon">
                                                         <i class="fa fa-truck"></i>
                                                     </div>
-                                                    <p>Delivery policy (edit with Customer reassurance module)</p>
+                                                    <p>Delivery policy </p>
                                                 </div>
                                             </li>
                                             <li>
@@ -119,7 +110,7 @@
                                                     <div class="reassurance-icon">
                                                         <i class="fa fa-exchange"></i>
                                                     </div>
-                                                    <p> Return policy (edit with Customer reassurance module)</p>
+                                                    <p> Return policy </p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -140,7 +131,7 @@
                                 <ul class="nav li-product-menu">
                                    <li><a class="active" data-toggle="tab" href="#description"><span>Description</span></a></li>
                                    <li><a data-toggle="tab" href="#product-details"><span>Product Details</span></a></li>
-                                   <li><a data-toggle="tab" href="#reviews"><span>Reviews</span></a></li>
+                         
                                 </ul>               
                             </div>
                             <!-- Begin Li's Tab Menu Content Area -->
@@ -149,115 +140,15 @@
                     <div class="tab-content">
                         <div id="description" class="tab-pane active show" role="tabpanel">
                             <div class="product-description">
-                                <span>The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in your desk or in an open-space office. Painted wooden frame with passe-partout for more depth.</span>
+                                <span>{{$product->product_details}}</span>
                             </div>
                         </div>
                         <div id="product-details" class="tab-pane" role="tabpanel">
                             <div class="product-details-manufacturer">
-                                <a href="#">
-                                    <img src="images/product-details/1.jpg" alt="Product Manufacturer Image">
-                                </a>
-                                <p><span>Reference</span> demo_7</p>
-                                <p><span>Reference</span> demo_7</p>
+                                {{$product->product_description}}
                             </div>
                         </div>
-                        <div id="reviews" class="tab-pane" role="tabpanel">
-                            <div class="product-reviews">
-                                <div class="product-details-comment-block">
-                                    <div class="comment-review">
-                                        <span>Grade</span>
-                                        <ul class="rating">
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-author-infos pt-25">
-                                        <span>HTML 5</span>
-                                        <em>01-12-18</em>
-                                    </div>
-                                    <div class="comment-details">
-                                        <h4 class="title-block">Demo</h4>
-                                        <p>Plaza</p>
-                                    </div>
-                                    <div class="review-btn">
-                                        <a class="review-links" href="#" data-toggle="modal" data-target="#mymodal">Write Your Review!</a>
-                                    </div>
-                                    <!-- Begin Quick View | Modal Area -->
-                                    <div class="modal fade modal-wrapper" id="mymodal" >
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    <h3 class="review-page-title">Write Your Review</h3>
-                                                    <div class="modal-inner-area row">
-                                                        <div class="col-lg-6">
-                                                           <div class="li-review-product">
-                                                               <img src="images/product/large-size/3.jpg" alt="Li's Product">
-                                                               <div class="li-review-product-desc">
-                                                                   <p class="li-product-name">Today is a good day Framed poster</p>
-                                                                   <p>
-                                                                       <span>Beach Camera Exclusive Bundle - Includes Two Samsung Radiant 360 R3 Wi-Fi Bluetooth Speakers. Fill The Entire Room With Exquisite Sound via Ring Radiator Technology. Stream And Control R3 Speakers Wirelessly With Your Smartphone. Sophisticated, Modern Design </span>
-                                                                   </p>
-                                                               </div>
-                                                           </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="li-review-content">
-                                                                <!-- Begin Feedback Area -->
-                                                                <div class="feedback-area">
-                                                                    <div class="feedback">
-                                                                        <h3 class="feedback-title">Our Feedback</h3>
-                                                                        <form action="#">
-                                                                            <p class="your-opinion">
-                                                                                <label>Your Rating</label>
-                                                                                <span>
-                                                                                    <select class="star-rating">
-                                                                                      <option value="1">1</option>
-                                                                                      <option value="2">2</option>
-                                                                                      <option value="3">3</option>
-                                                                                      <option value="4">4</option>
-                                                                                      <option value="5">5</option>
-                                                                                    </select>
-                                                                                </span>
-                                                                            </p>
-                                                                            <p class="feedback-form">
-                                                                                <label for="feedback">Your Review</label>
-                                                                                <textarea id="feedback" name="comment" cols="45" rows="8" aria-required="true"></textarea>
-                                                                            </p>
-                                                                            <div class="feedback-input">
-                                                                                <p class="feedback-form-author">
-                                                                                    <label for="author">Name<span class="required">*</span>
-                                                                                    </label>
-                                                                                    <input id="author" name="author" value="" size="30" aria-required="true" type="text">
-                                                                                </p>
-                                                                                <p class="feedback-form-author feedback-form-email">
-                                                                                    <label for="email">Email<span class="required">*</span>
-                                                                                    </label>
-                                                                                    <input id="email" name="email" value="" size="30" aria-required="true" type="text">
-                                                                                    <span class="required"><sub>*</sub> Required fields</span>
-                                                                                </p>
-                                                                                <div class="feedback-btn pb-15">
-                                                                                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">Close</a>
-                                                                                    <a href="#">Submit</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Feedback Area End Here -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                    <!-- Quick View | Modal Area End Here -->
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -281,16 +172,16 @@
 
                                         <div class="single-product-wrap">
                                             <div class="product-image">
-                                                <a href="single-product.html">
+                                                <a href="/product/{{ $item->id }}">
                                                     <img src="{{asset($item->image)}}" alt="Li's Product Image">
                                                 </a>
-                                                <span class="sticker">New</span>
+                                    
                                             </div>
                                             <div class="product_desc">
                                                 <div class="product_desc_info">
                                                     <div class="product-review">
                                                         <h5 class="manufacturer">
-                                                            <a href="product-details.html">{{$item->product_type}}</a>
+                                                            <a href="{{ route('shop', ['product_type' => $item->product_type]) }}">{{$item->product_type}}</a>
                                                         </h5>
                                                         <div class="rating-box">
                                                             <ul class="rating">
@@ -309,8 +200,8 @@
                                                 </div>
                                                 <div class="add-actions">
                                                     <ul class="add-actions-link">
-                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
-                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                        <li class="add-cart active"><a href="{{ route('cart.add', $item->id) }}">Add to cart</a></li>
+                                                        <li><a href="/product/{{ $item->id }}" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
                                                         <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
                                                     </ul>
                                                 </div>

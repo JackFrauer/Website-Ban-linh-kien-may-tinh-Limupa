@@ -120,7 +120,7 @@
                                                     href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                             </h4>
                                             <div class="price-box">
-                                                <span class="new-price">{{ number_format($item->price) }}</span>
+                                                <span class="new-price">{{ number_format($item->price) }} VND</span>
                                             </div>
                                         </div>
                                         <div class="add-actions">
@@ -177,7 +177,7 @@
                                                     href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                             </h4>
                                             <div class="price-box">
-                                                <span class="new-price">{{ number_format($item->price) }}</span>
+                                                <span class="new-price">{{ number_format($item->price) }} VND</span>
                                             </div>
                                         </div>
                                         <div class="add-actions">
@@ -233,7 +233,7 @@
                                                     href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                             </h4>
                                             <div class="price-box">
-                                                <span class="new-price">{{ number_format($item->price) }}</span>
+                                                <span class="new-price">{{ number_format($item->price) }} VND </span>
                                             </div>
                                         </div>
                                         <div class="add-actions">
@@ -334,9 +334,8 @@
                                                     href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                             </h4>
                                             <div class="price-box">
-                                                <span class="new-price">{{ number_format($item->price) }}</span>
-                                                <span class="old-price">$77.22</span>
-                                                <span class="discount-percentage">-7%</span>
+                                                <span class="new-price">{{ number_format($item->price) }} VND</span>
+                                        
                                             </div>
                                         </div>
                                         <div class="add-actions">
@@ -405,9 +404,8 @@
                                                     href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                             </h4>
                                             <div class="price-box">
-                                                <span class="new-price">{{ number_format($item->price) }}</span>
-                                                <span class="old-price">$77.22</span>
-                                                <span class="discount-percentage">-7%</span>
+                                                <span class="new-price">{{ number_format($item->price) }} VND</span>
+                        
                                             </div>
                                         </div>
                                         <div class="add-actions">

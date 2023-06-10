@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home Version One || limupa - Digital Products Store eCommerce Bootstrap 4 Template</title>
+    <title>Limupa - Digital Products Store </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -169,6 +169,10 @@
                                         <span></span>
                                         <div class="minicart">
                                             @if(session('cart'))
+                                            @php $total = 0 @endphp
+                                            @foreach ((array) session('cart') as $id => $details)
+                                                @php $total += $details['price'] * $details['quantity'] @endphp
+                                            @endforeach
                                             @foreach (session('cart') as $id => $item)
                                             <ul class="minicart-product-list">
                                                 <li>
@@ -178,7 +182,7 @@
                                                     </a>
                                                     <div class="minicart-product-details">
                                                         <h6><a href="/product/{{ $item['id'] }}">{{ $item['product_name'] }}</a></h6>
-                                                        <span>£40 x 1</span>
+                                                        <span>{{number_format($item['price'])}} VND x {{$item['quantity']}}</span>
                                                     </div>
                                                     <button class="close" title="Remove">
                                                         <i class="fa fa-close"></i>
@@ -187,13 +191,13 @@
                                             </ul>
                                             @endforeach
                                             @endif
-                                            <p class="minicart-total">SUBTOTAL: <span>£80.00</span></p>
+                                            <p class="minicart-total">SUBTOTAL: <span>{{number_format($total)}} VND </span></p>
                                             <div class="minicart-button">
-                                                <a href="shopping-cart.html"
+                                                <a href="cart"
                                                     class="li-button li-button-fullwidth li-button-dark">
                                                     <span>View Full Cart</span>
                                                 </a>
-                                                <a href="checkout.html" class="li-button li-button-fullwidth">
+                                                <a href="/checkout" class="li-button li-button-fullwidth">
                                                     <span>Checkout</span>
                                                 </a>
                                             </div>

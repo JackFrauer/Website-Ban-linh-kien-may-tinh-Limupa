@@ -91,7 +91,7 @@
                 @error('images')
                     <p style="color: red; font-size: 14px; margin-top: 5px;">{{ $message }}</p>
                 @enderror
-                <input type="submit" name="submit" value="Add" class="btn btn-primary mt-3 form-control">
+                <input type="submit" name="submit" value="Update" class="btn btn-primary mt-3 form-control">
             </form>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {

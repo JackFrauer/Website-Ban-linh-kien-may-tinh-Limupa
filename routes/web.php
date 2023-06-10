@@ -3,9 +3,10 @@
 
 use App\Models\Products;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductsController;
 
 /*
@@ -44,9 +45,22 @@ Route::middleware(['admin'])->group(function () {
     route::get('/admin/product_table/{product}', [AdminController::class, 'edit']);
 
     //delete
-    route::delete('/admin/delete/{product}', [AdminController::class, 'destroy'])->middleware('admin');
-});
+    route::delete('/admin/delete/{product}', [AdminController::class, 'destroy']);
 
+    route::get('/admin/user/{id}', [AdminController::class, 'show_user']);
+    route::put('/admin/user_update/{id}', [AdminController::class, 'update_user'])->name('user_update');
+    route::delete('admin/delete_user/{id}', [AdminController::class, 'delete_user']);
+
+
+    route::delete('/admin/delete_order/{id}', [AdminController::class, 'delete_order']);
+    route::get('/admin/order/{id}', [AdminController::class, 'show_order']);
+    route::put('/admin/order_update/{id}', [AdminController::class, 'update_order'])->name('order_update');
+
+    route::get('/admin/manufacturers',[AdminController::class,'list_manufacturer']);
+    route::get('/admin/manufacturers/update/{id}',[AdminController::class,'show_manufacturer']);
+    route::put('/admin/manufacturer/update/{id}',[AdminController::class,'update_manufacturer']);
+
+});
 
 
 //show the form for register/login
@@ -66,3 +80,5 @@ route::get('/cart', [CartController::class, 'show'])->name('cart.index')->middle
 Route::patch('update-cart', [CartController::class, 'update'])->name('update_cart')->middleware('auth');
 Route::delete('remove-from-cart', [CartController::class, 'remove'])->name('remove_from_cart')->middleware('auth');
 Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout')->middleware('auth');
+
+route::get('/about',[AboutController::class,'index']);

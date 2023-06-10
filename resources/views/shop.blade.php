@@ -1,4 +1,4 @@
-
+<x-header-card/>
 <!-- Header Area End Here -->
 <!-- Begin Li's Breadcrumb Area -->
 <div class="breadcrumb-area">
@@ -66,14 +66,14 @@
                                                     <a href="/product/{{ $item->id }}">
                                                         <img src="{{ asset($item->image) }}" alt="Li's Product Image">
                                                     </a>
-                                                    <span class="sticker">New</span>
+                                                  
                                                 </div>
                                                 <div class="product_desc">
                                                     <div class="product_desc_info">
                                                         <div class="product-review">
                                                             <h5 class="manufacturer">
                                                                 <a
-                                                                    href="product-details.html">{{ $item->product_type }}</a>
+                                                                    href="{{ route('shop', ['product_type' => $item->product_type]) }}">{{ $item->product_type }}</a>
                                                             </h5>
                                                             <div class="rating-box">
                                                                 <ul class="rating">
@@ -92,18 +92,18 @@
                                                         </h4>
                                                         <div class="price-box">
                                                             <span
-                                                                class="new-price">{{ number_format($item->price) }}</span>
+                                                                class="new-price">{{ number_format($item->price) }} VND</span>
                                                         </div>
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="shopping-cart.html">Add
+                                                            <li class="add-cart active"><a href="{{ route('cart.add', $item->id) }}">Add
                                                                     to cart</a></li>
                                                             <li><a href="/product/{{$item->id}}" title="quick view"
                                                                     class="quick-view-btn" data-toggle="modal"
                                                                     data-target="#exampleModalCenter"><i
                                                                         class="fa fa-eye"></i></a></li>
-                                                            <li><a class="links-details" href="wishlist.html"><i
+                                                            <li><a class="links-details" href="#"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                         </ul>
                                                     </div>
@@ -126,7 +126,7 @@
                                                     <a href="/product/{{ $item->id }}">
                                                         <img src="{{ asset($item->image) }}" alt="Li's Product Image">
                                                     </a>
-                                                    <span class="sticker">New</span>
+                     
                                                 </div>
                                             </div>
                                             <div class="col-lg-5 col-md-7">
@@ -135,7 +135,7 @@
                                                         <div class="product-review">
                                                             <h5 class="manufacturer">
                                                                 <a
-                                                                    href="/product/{{ $item->id }}">{{ $item->product_type }}</a>
+                                                                    href="{{ route('shop', ['product_type' => $item->product_type]) }}">{{ $item->product_type }}</a>
                                                             </h5>
                                                             <div class="rating-box">
                                                                 <ul class="rating">
@@ -150,11 +150,11 @@
                                                             </div>
                                                         </div>
                                                         <h4><a class="product_name"
-                                                                href="single-product.html">{{ $item->product_name }}</a>
+                                                                href="/product/{{ $item->id }}">{{ $item->product_name }}</a>
                                                         </h4>
                                                         <div class="price-box">
                                                             <span
-                                                                class="new-price">{{ number_format($item->price) }}</span>
+                                                                class="new-price">{{ number_format($item->price) }} VND</span>
                                                         </div>
                                                         <p>{{ $item->product_details }}</p>
                                                     </div>
@@ -163,8 +163,8 @@
                                             <div class="col-lg-4">
                                                 <div class="shop-add-action mb-xs-30">
                                                     <ul class="add-actions-link">
-                                                        <li class="add-cart"><a href="#">Add to cart</a></li>
-                                                        <li class="wishlist"><a href="wishlist.html"><i
+                                                        <li class="add-cart"><a href="{{ route('cart.add', $item->id) }}">Add to cart</a></li>
+                                                        <li class="wishlist"><a href="#"><i
                                                                     class="fa fa-heart-o"></i>Add to wishlist</a></li>
                                                         <li><a class="quick-view" data-toggle="modal"
                                                                 data-target="#exampleModalCenter" href="/product/{{$item->id}}"><i
