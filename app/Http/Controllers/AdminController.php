@@ -158,21 +158,22 @@ class AdminController extends Controller
 
     public function update_user(Request $request, Users $id)
     {
-        // Get the user
+
 
         // Validate the form
         $formfield = $request->validate([
             'name' => ['required', 'min:3'],
             'email' => ['required', 'email', Rule::unique('users', 'email')],
-            'password' => ['required', 'min:3'],
-            'First_name' => ['required', 'min:3'],
-            'Last_name' => ['required', 'min:3'],
+            'password' => ['required'],
+            'First_name' => ['required'],
+            'Last_name' => ['required'],
             'role' => 'nullable'
         ]);
         // Update the user
         $formfield['password']=bcrypt($formfield['password']);
-        // dd($formfield);
+
         $id->update($formfield);
+
         // Redirect back to the user
         return redirect('/god')->with('message', 'User updated successfully');
     }

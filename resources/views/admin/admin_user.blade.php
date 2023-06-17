@@ -28,7 +28,7 @@
                 @enderror
 
                 <label>Password:</label>
-                <input type="text" name="password" class="form-control" value="{{ $user->password}}">
+                <input type="text" name="password" class="form-control" value="{{$user->password}}">
                 @error('password')
                     <p style="color: red; font-size: 14px; margin-top: 5px;">{{ $message }}</p>
                 @enderror
@@ -43,10 +43,9 @@
                 <label>Role</label>
  
                 <select name="role" class="form-control">
-                    <option value="">Pick a role</option>
-                    @foreach ($user_role->unique('role') as $item)
-                        <option value="{{ $item->role }}">{{ $item->role }}</option>
-                    @endforeach
+                    <option value="user">Pick a role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
                 </select>
                 @error('role')
                     <p style="color: red; font-size: 14px; margin-top: 5px;">{{ $message }}</p>

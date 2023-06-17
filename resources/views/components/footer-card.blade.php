@@ -73,21 +73,21 @@
                         <div class="footer-logo">
                             <img src="{{asset('images/menu/logo/1.jpg')}}" alt="Footer Logo">
                             <p class="info">
-                                We are a team of designers and developers that create high quality HTML Template & Woocommerce, Shopify Theme.
+                                Limupa is a PC hardware store that aim to have the best deal for you.
                             </p>
                         </div>
                         <ul cla ````````s="des">
                             <li>
                                 <span>Address: </span>
-                                6688Princess Road, London, Greater London BAS 23JK, UK
+                                745/2 Ho Chi Minh Viet Nam
                             </li>
                             <li>
                                 <span>Phone: </span>
-                                <a href="#">(+123) 123 321 345</a>
+                                <a href="/">(+84) 938 976 425</a>
                             </li>
                             <li>
                                 <span>Email: </span>
-                                <a href="mailto://info@yourdomain.com">info@yourdomain.com</a>
+                                <a href="http://limupa.infinityfreeapp.com/">limupa.infinityfreeapp.com/</a>
                             </li>
                         </ul>
                     </div>
@@ -97,10 +97,10 @@
                         <div class="footer-block">
                             <h3 class="footer-block-title">Product</h3>
                             <ul>
-                                <li><a href="#">Prices drop</a></li>
-                                <li><a href="#">New products</a></li>
-                                <li><a href="#">Best sales</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/">Prices drop</a></li>
+                                <li><a href="/">New products</a></li>
+                                <li><a href="/">Best sales</a></li>
+                                <li><a href="/">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -110,10 +110,10 @@
                         <div class="footer-block">
                             <h3 class="footer-block-title">Our company</h3>
                             <ul>
-                                <li><a href="#">Delivery</a></li>
-                                <li><a href="#">Legal Notice</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/">Delivery</a></li>
+                                <li><a href="/">Legal Notice</a></li>
+                                <li><a href="/">About us</a></li>
+                                <li><a href="/">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -158,14 +158,14 @@
                         <!-- Begin Footer Newsletter Area -->
                         <div class="footer-newsletter">
                             <h4>Sign up to newsletter</h4>
-                            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
+                          
                                <div id="mc_embed_signup_scroll">
                                   <div id="mc-form" class="mc-form subscribe-form form-group" >
                                     <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
                                     <button  class="btn" id="mc-submit">Subscribe</button>
                                   </div>
                                </div>
-                            </form>
+                    
                         </div>
                         <!-- Footer Newsletter Area End Here -->
                     </div>
@@ -183,31 +183,31 @@
                     <!-- Begin Footer Links Area -->
                     <div class="footer-links">
                         <ul>
-                            <li><a href="#">Online Shopping</a></li>
-                            <li><a href="#">Promotions</a></li>
-                            <li><a href="#">My Orders</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Customer Service</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Most Populars</a></li>
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Special Products</a></li>
-                            <li><a href="#">Manufacturers</a></li>
-                            <li><a href="#">Our Stores</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Payments</a></li>
-                            <li><a href="#">Warantee</a></li>
-                            <li><a href="#">Refunds</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Discount</a></li>
-                            <li><a href="#">Refunds</a></li>
-                            <li><a href="#">Policy Shipping</a></li>
+                            <li><a href="/">Online Shopping</a></li>
+                            <li><a href="/">Promotions</a></li>
+                            <li><a href="/">My Orders</a></li>
+                            <li><a href="/">Help</a></li>
+                            <li><a href="/">Customer Service</a></li>
+                            <li><a href="/">Support</a></li>
+                            <li><a href="/">Most Populars</a></li>
+                            <li><a href="/">New Arrivals</a></li>
+                            <li><a href="/">Special Products</a></li>
+                            <li><a href="/">Manufacturers</a></li>
+                            <li><a href="/">Our Stores</a></li>
+                            <li><a href="/">Shipping</a></li>
+                            <li><a href="/">Payments</a></li>
+                            <li><a href="/">Warantee</a></li>
+                            <li><a href="/">Refunds</a></li>
+                            <li><a href="/">Checkout</a></li>
+                            <li><a href="/">Discount</a></li>
+                            <li><a href="/">Refunds</a></li>
+                            <li><a href="/">Policy Shipping</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links Area End Here -->
                     <!-- Begin Footer Payment Area -->
                     <div class="copyright text-center">
-                        <a href="#">
+                        <a href="/">
                             <img src="{{asset('images/payment/1.png')}}" alt="">
                         </a>
                     </div>
