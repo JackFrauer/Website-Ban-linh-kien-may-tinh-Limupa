@@ -19,7 +19,7 @@ php artisan storage:link
 ```
 
 ### Running The App
-Upload the files to your document root, Valet folder or run 
+Go to the root folder and run 
 ```
 php artisan serve
 ```
