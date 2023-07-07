@@ -6,7 +6,8 @@ As this time i will put a the website URL here that will act as a demo:
 
 ## Usage
 
-###Composer
+### Composer
+
 Install Composer here:[https://getcomposer.org/download/](https://getcomposer.org/download/)
 ### Database Setup
 This app uses XAMPP for MySQL. To use something different, open up config/Database.php and change the default driver.
